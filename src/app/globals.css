@@ -7,7 +7,7 @@
   --color-white: hsl(0, 0%, 100%);
 
   /* Typography */
-  --font-family: 'Outfit', sans-serif;
+  --font-family: "Outfit", sans-serif;
   --font-size-heading-l: 2rem; /* 32px */
   --font-size-heading-m: 1.5rem; /* 24px */
   --font-size-heading-s: 1.5rem; /* 24px */
@@ -15,7 +15,9 @@
 
   --font-size-body-m: 0.9375rem; /* 15px */
   --font-size-body-s: 0.8125rem; /* 13px */
-  
+
   --font-weight-light: 300;
   --font-weight-medium: 500;
+
+  font-family: var(--font-family);
 }

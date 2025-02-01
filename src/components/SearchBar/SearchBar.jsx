@@ -1,0 +1,45 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import styles from "./SearchBar.module.css";
+import VisuallyHidden from "../VisuallyHidden";
+
+import iconSearch from "@/assets/icon-search.svg";
+
+function SearchBar() {
+  const [search, setSearch] = React.useState("");
+
+  return (
+    <form
+      role="search"
+      aria-label="Search for movies or TV series"
+      className={styles.form}
+      onSubmit={(event) => {
+        // event.preventDefault();
+      }}
+    >
+      <Image
+        src={iconSearch}
+        alt="Submit search"
+        className={styles.searchBtn}
+      />
+
+      <label htmlFor="search">
+        <VisuallyHidden>Search for movies or TV series</VisuallyHidden>
+      </label>
+      <input
+        type="text"
+        size="50"
+        id="search"
+        name="search"
+        placeholder="Search for movies or TV series"
+        aria-required="true"
+        aria-label="Search for movies or TV series"
+        className={styles.searchInput}
+        onChange={(event) => setSearch(event.target.value)}
+      />
+    </form>
+  );
+}
+
+export default SearchBar;

@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchBtn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.searchInput {
+  appearance: none;
+  font-size: var(--font-size-heading-m);
+  font-weight: var(--font-weight-light);
+  border: none;
+  background-color: inherit;
+  color: var(--color-white);
+  caret-color: var(--color-primary);
+}
