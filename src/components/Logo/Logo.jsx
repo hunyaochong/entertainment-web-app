@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "./Logo.module.css";
-import logo from "@/assets/logo.svg";
+// import logo from "@/assets/logo.svg";
 
 function Logo() {
   return (
     <Image
-      src={logo}
+      src="/assets/logo.svg"
       alt="Entertainment app logo"
       width={32}
       height={25}

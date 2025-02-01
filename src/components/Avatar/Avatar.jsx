@@ -2,13 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "./Avatar.module.css";
-import avatarImage from "@/assets/image-avatar.png";
 
 function Avatar() {
   return (
     <div className={styles.avatarWrapper}>
       <Image
-        src={avatarImage}
+        src="/assets/image-avatar.png"
         alt="User profile picture"
         width={40}
         height={40}

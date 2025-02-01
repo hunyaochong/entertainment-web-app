@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./SearchBar.module.css";
 import VisuallyHidden from "../VisuallyHidden";
 
-import iconSearch from "@/assets/icon-search.svg";
+// import iconSearch from "@/assets/icon-search.svg";
 
 function SearchBar() {
   const [search, setSearch] = React.useState("");
@@ -15,14 +15,21 @@ function SearchBar() {
       aria-label="Search for movies or TV series"
       className={styles.form}
       onSubmit={(event) => {
-        // event.preventDefault();
+        event.preventDefault();
       }}
     >
-      <Image
-        src={iconSearch}
-        alt="Submit search"
+      <button
         className={styles.searchBtn}
-      />
+        type="submit"
+        aria-label="Submit search"
+      >
+        <Image
+          src={"/assets/icon-search.svg"}
+          alt="Search icon"
+          width={32}
+          height={32}
+        />
+      </button>
 
       <label htmlFor="search">
         <VisuallyHidden>Search for movies or TV series</VisuallyHidden>
