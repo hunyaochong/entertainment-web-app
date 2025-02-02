@@ -1,6 +1,6 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import "./reset.css"
+import "./reset.css";
 
 const outfit = Outfit({
   weight: ["300", "500"], // Light and Medium weights
@@ -16,9 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable}`}>
-        {children}
-      </body>
+      <body className={`${outfit.variable}`}>{children}</body>
     </html>
   );
 }

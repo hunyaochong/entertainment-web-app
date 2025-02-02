@@ -1,0 +1,8 @@
+.trending {
+  color: white;
+}
+.trending h1 {
+  font-size: var(--font-size-heading-l);
+  font-weight: var(--font-weight-light);
+  color: white;
+}

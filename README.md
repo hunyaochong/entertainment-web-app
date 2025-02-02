@@ -13,3 +13,9 @@ I plan to learn the following things via this challenge:
 ### Day 1-2
 
 Managed to build out the SideNav component, including the avatar, logo, and nav links.
+
+### Day 3
+
+Learnt that in module CSS, must always start with a class reference, but can then continue with a normal html tag like this:
+
+.someClass div { ... }

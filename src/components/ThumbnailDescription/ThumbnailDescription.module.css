@@ -1,0 +1,33 @@
+.trendingWrapper {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.regularWrapper {
+  margin-top: 8px;
+}
+
+.movieInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: var(--font-weight-light);
+  color: #b0b0b0; /* Adjust to match the design */
+  height: min-content;
+  opacity: 1;
+}
+
+.dot {
+  font-size: 24px;
+  color: #555; /* Slightly dimmed */
+  display: flex;
+  align-items: center;
+  height: 16px;
+}
+
+.movieTitle {
+  color: var(--color-white);
+  font-weight: var(--font-weight-medium);
+}

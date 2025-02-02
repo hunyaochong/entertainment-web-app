@@ -2,41 +2,12 @@
   position: relative;
   width: fit-content;
 }
-.thumbnail {
+
+.imageWrapper {
+  position: relative;
+}
+
+.imageWrapper img {
   border-radius: 8px;
   overflow: hidden;
-}
-
-.hoverWrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Use rgba for background transparency */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.playBtnWrapper {
-  display: flex;
-  align-items: center;
-  gap: 19px;
-  border: none;
-  border-radius: 28.5px;
-  padding: 9px;
-  background-color: rgba(255, 255, 255, 0.25);
-  cursor: pointer;
-}
-
-.playWord {
-  color: var(--color-white);
-  margin-right: 15px;
-  font-size: var(--font-size-heading-xs);
-  font-weight: var(--font-weight-medium);
 }

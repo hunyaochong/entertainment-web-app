@@ -2,6 +2,8 @@ import styles from "./page.module.css";
 import SideNav from "@/components/SideNav";
 import SearchBar from "@/components/SearchBar";
 import Thumbnail from "@/components/Thumbnail";
+import Trending from "@/components/Trending";
+import ThumbnailBookmark from "@/components/ThumbnailBookmark";
 
 export default function Home() {
   return (
@@ -11,7 +13,8 @@ export default function Home() {
       </div>
       <div className={styles.rightNavWrapper}>
         <SearchBar />
-        <Thumbnail />
+        <Thumbnail thumbnailType={"regular"} />
+        <Trending />
       </div>
     </div>
   );
