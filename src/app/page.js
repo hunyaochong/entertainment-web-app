@@ -3,7 +3,6 @@ import SideNav from "@/components/SideNav";
 import SearchBar from "@/components/SearchBar";
 import Thumbnail from "@/components/Thumbnail";
 import Trending from "@/components/Trending";
-import ThumbnailBookmark from "@/components/ThumbnailBookmark";
 
 export default function Home() {
   return (
@@ -12,8 +11,7 @@ export default function Home() {
         <SideNav />
       </div>
       <div className={styles.rightNavWrapper}>
-        <SearchBar />
-        <Thumbnail thumbnailType={"regular"} />
+        <SearchBar marginSpacing={34} />
         <Trending />
       </div>
     </div>

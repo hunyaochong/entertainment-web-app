@@ -1,8 +1,29 @@
-.trending {
-  color: white;
-}
 .trending h1 {
   font-size: var(--font-size-heading-l);
   font-weight: var(--font-weight-light);
   color: white;
+  margin-bottom: 25px;
+}
+
+.scrollArea {
+  display: flex;
+  overflow-x: hidden; /* Hide scrollbar by default */
+  gap: 40px;
+  padding-bottom: 4px;
+}
+
+.scrollArea:hover {
+  overflow-x: auto; /* Show scrollbar on hover */
+}
+
+.scrollArea::-webkit-scrollbar {
+  height: 6px;
+  background: transparent; /* Make the scrollbar track transparent */
+  margin-top: 2px;
+}
+
+.scrollArea::-webkit-scrollbar-thumb {
+  background: gray; /* Set the scrollbar thumb color to gray */
+  border-radius: 10px;
+  margin-top: 2px;
 }

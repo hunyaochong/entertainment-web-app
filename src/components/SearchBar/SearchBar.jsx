@@ -4,9 +4,7 @@ import Image from "next/image";
 import styles from "./SearchBar.module.css";
 import VisuallyHidden from "../VisuallyHidden";
 
-// import iconSearch from "@/assets/icon-search.svg";
-
-function SearchBar() {
+function SearchBar({ marginSpacing }) {
   const [search, setSearch] = React.useState("");
 
   return (
@@ -14,6 +12,7 @@ function SearchBar() {
       role="search"
       aria-label="Search for movies or TV series"
       className={styles.form}
+      style={marginSpacing ? { marginBottom: marginSpacing } : undefined}
       onSubmit={(event) => {
         event.preventDefault();
       }}

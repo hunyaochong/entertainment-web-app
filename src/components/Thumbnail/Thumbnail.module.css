@@ -1,6 +1,7 @@
 .thumbnailWrapper {
   position: relative;
   width: fit-content;
+  flex-shrink: 0;
 }
 
 .imageWrapper {

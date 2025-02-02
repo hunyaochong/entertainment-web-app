@@ -2,7 +2,13 @@ import React from "react";
 import Image from "next/image";
 import styles from "./ThumbnailDescription.module.css";
 
-function ThumbnailDescription({ thumbnailType }) {
+function ThumbnailDescription({
+  title,
+  year,
+  category,
+  rating,
+  thumbnailType,
+}) {
   //todo: to replace year, movie type, PG, and title with dynamic values
   return (
     <div
@@ -20,7 +26,7 @@ function ThumbnailDescription({ thumbnailType }) {
             : { fontSize: "var(--font-size-body-s)" }
         }
       >
-        <span>2019</span>
+        <span>{year}</span>
         <span className={styles.dot}>•</span>
         <span>
           <Image
@@ -30,9 +36,9 @@ function ThumbnailDescription({ thumbnailType }) {
             height={12}
           />
         </span>
-        <span>Movie</span>
+        <span>{category}</span>
         <span className={styles.dot}>•</span>
-        <span>PG</span>
+        <span>{rating}</span>
       </div>
 
       <h2
@@ -43,7 +49,7 @@ function ThumbnailDescription({ thumbnailType }) {
             : { fontSize: "var(--font-size-heading-xs)" }
         }
       >
-        The Great Lands
+        {title}
       </h2>
     </div>
   );

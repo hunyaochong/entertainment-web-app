@@ -4,8 +4,8 @@ import Image from "next/image";
 
 import styles from "./ThumbnailBookmark.module.css";
 
-function ThumbnailBookmark({ thumbnailType }) {
-  const [bookmarked, setBookmarked] = React.useState(false);
+function ThumbnailBookmark({ isBookmarked, thumbnailType }) {
+  const [bookmarked, setBookmarked] = React.useState(isBookmarked);
 
   function handleClick() {
     setBookmarked(!bookmarked);
