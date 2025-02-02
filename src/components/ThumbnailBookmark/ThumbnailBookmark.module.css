@@ -14,3 +14,11 @@
 
   cursor: pointer;
 }
+
+.wrapper:hover {
+  background-color: var(--color-white);
+}
+
+.wrapper:hover img {
+  filter: brightness(0) invert(0);
+}

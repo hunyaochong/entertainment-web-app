@@ -18,6 +18,7 @@ function ThumbnailBookmark({ isBookmarked, thumbnailType }) {
           ? { marginRight: "24px", marginTop: "16px" }
           : { margin: "16px" }
       }
+      onClick={handleClick}
     >
       <Image
         src={
@@ -28,7 +29,6 @@ function ThumbnailBookmark({ isBookmarked, thumbnailType }) {
         alt={"bookmark icon"}
         width={12}
         height={14}
-        onClick={handleClick}
       ></Image>
     </button>
   );
